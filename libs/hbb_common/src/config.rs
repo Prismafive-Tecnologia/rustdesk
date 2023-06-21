@@ -82,14 +82,12 @@ const CHARS: &[char] = &[
 ];
 
 pub const RENDEZVOUS_SERVERS: &[&str] = &[
-    "rs-ny.rustdesk.com",
-    "rs-sg.rustdesk.com",
-    "rs-cn.rustdesk.com",
+    "relay.prismafive.com.br",
 ];
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     Some(key) if !key.is_empty() => key,
-    _ => "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=",
+    _ => "IN62XwgMzyiChhNsJ/vjxVLpm6xBRn7B9WJylMkpMWmjIMbnYe3dYA9znhCiA4x6oWPQ+VbjbdaQHWrwnADAew==",
 };
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
